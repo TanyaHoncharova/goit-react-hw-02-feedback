@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FeedbackOptions from './FeedbackOptions'
+import Statistics from './Statistics'
 import  './Counter.css';
 
 class Counter extends Component  {
@@ -55,13 +56,12 @@ class Counter extends Component  {
     render() {
         return (
             <div className="StatCounter">
-                <h2 className="title">Please leave feedback</h2>
-                <div className="BtnContainer">
-                    <button type="button" onClick={this.handleGoodBtn} className="statBtn"> Good</button>
-                <button type="button" onClick={this.handleNeutralBtn} className="statBtn"> Neutral</button>
-                <button type="button" onClick={this.handleBadBtn} className="statBtn"> Bad </button>
-                </div>
-                < FeedbackOptions
+                 <FeedbackOptions  
+                    onHandleGoodBtn={this.handleGoodBtn}
+                    onHandleNeutralBtn={this.handleNeutralBtn}
+                    onHandleBadBtn = {this.handleBadBtn}
+                />
+                < Statistics
                     Good={ this.state.good}
                     Neutral={this.state.neutral }
                     Bad={this.state.bad}

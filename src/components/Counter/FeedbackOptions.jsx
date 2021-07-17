@@ -1,20 +1,16 @@
-import React  from 'react';
+import React from 'react';
 
-const FeedbackOptions = ({Good, Neutral, Bad, Total, Positive})=>{
-    return(
-        <div>
-        <h2 className="title" >Statistics</h2>
-    <ul className="statistic">
-        <li>Good: {Good} </li>
-        <li> Neutral: {Neutral} </li>
-        <li>Bad: {Bad} </li>
-        <li>Total: {Total()} </li>
-        <li>Positive feedback: {Positive()} % </li>
-    </ul>
-    </div>
-
+const FeedbackOptions = ({onHandleGoodBtn, onHandleNeutralBtn, onHandleBadBtn}) => {
+    return (
+                    <div className="StatCounter">
+                <h2 className="title">Please leave feedback</h2>
+                <div className="BtnContainer">
+                    <button type="button" onClick={onHandleGoodBtn} className="statBtn"> Good</button>
+                <button type="button" onClick={onHandleNeutralBtn} className="statBtn"> Neutral</button>
+                <button type="button" onClick={onHandleBadBtn} className="statBtn"> Bad </button>
+            </div>
+            </div>
     )
-}
-
+};
 
 export default FeedbackOptions;
