@@ -15,12 +15,10 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -35,4 +33,47 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.StatCounter {
+  width: 350px;
+  /* outline: 1px solid tomato; */
+  margin-left: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #282c34;
+  margin-left: auto;
+  margin-right: auto;
+}
+.BtnContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.statBtn {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(71, 109, 192, 0.363);
+}
+
+.statistic {
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #282c34;
+}
+
+.Notification {
+  display: flex;
+  align-self: center;
+  margin: 30px;
+  padding: 30px;
+  color: red;
+  border: 2px solid tomato;
 }
