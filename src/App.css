@@ -61,6 +61,10 @@
   border-radius: 5px;
   background-color: rgba(71, 109, 192, 0.363);
 }
+.statBtn :hover,
+:focus {
+  background-color: rgba(21, 69, 226, 0.192);
+}
 
 .statistic {
   list-style: none;
